@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-md bg-custom">
+    <div class="container-fluid">
+      <a >
+        <img src="https://i.ibb.co/tKV9fKn/logo-tech2.png" alt="" style="max-width: 70px;">
+      </a>
+  
+      <div class="loader">
+        <div data-glitch="" class="glitch"> </div>
+     </div>
+      <button class="navbar-toggler" type="button" aria-controls="navbarContent" [attr.aria-expanded]="!collapsed"
+        aria-label="Toggle navigation" (click)="collapsed = !collapsed">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="navbar-collapse" [class.collapse]="collapsed" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+      
+         
+          
+          <!-- Otros elementos del menú de navegación aquí -->
+         
+       
+        
+          
+  
+          <!-- Más elementos del menú de navegación aquí -->
+  
+          <li class="nav-item" ngbDropdown>
+            <a class="nav-link" id="navbarDropdown2" role="button" ngbDropdownToggle>
+              <i class="nav-icon"></i> Sobre mí
+            </a>
+            <div ngbDropdownMenu aria-labelledby="navbarDropdown2" class="dropdown-menu dropdown-menu-end">
+              <a ngbDropdownItem routerLink="user/list" (click)="$event.preventDefault()" routerLink="/about-us">Sobre nosotros.</a>
+              <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Sobre el proyecto.</a>
+            </div>
+          </li>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+        </div>
+  
+          
+         
+        
+          
+  
+        </ul>
+  
+        <!-- Botones de usuario aquí -->
+        
+  
+      
+          
+     
+          <button routerLink="user/login" type="button" class="btn btn-login"  > <i class="bi bi-github"></i>
+            
+            Go My github</button>
+          
+            
+      </div>
+    </div>
+
+    
+  </nav>
