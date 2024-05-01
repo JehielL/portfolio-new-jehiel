@@ -4,6 +4,7 @@ import Aos from 'aos';
 import { CommonModule } from '@angular/common';
 import { ParallaxStandaloneDirective } from '@yoozly/ngx-parallax';
 import { CarouselModule } from 'primeng/carousel';
+import { RouterLink } from '@angular/router';
 
 
 
@@ -11,7 +12,7 @@ import { CarouselModule } from 'primeng/carousel';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NgbAccordionModule, CommonModule, ParallaxStandaloneDirective, CarouselModule],
+  imports: [NgbAccordionModule, CommonModule, ParallaxStandaloneDirective, CarouselModule, RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

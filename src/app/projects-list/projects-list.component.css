@@ -1,0 +1,225 @@
+.custom-col {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.426);
+    margin: 40px auto;
+    border-radius: 40px;
+    padding: 30px;
+    max-width: 400px;
+  }
+  
+  .text-gradient {
+    background: linear-gradient(to right, #00ffdd, #cf74c0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 100px;
+    margin-top: 3rem;
+  }
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  
+  
+  
+  .horizontal-bars {
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #0bd1df, #c40eb2, #0d2ff2);
+    /* Degradado de blanco a gris a blanco */
+    margin-bottom: 1rem;
+  }
+  
+  .custom-title {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 20px;
+    font-family: Noto Sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @media (min-width: 300px) {
+    .custom-col {
+      margin-top: 50px;
+      margin-bottom: 0;
+    }
+  }
+  
+  .hero {
+    width: 100%;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    height: 55vh; /* Agregado */
+  }
+  
+  .section-bg {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    color: black;
+    z-index: 0;
+    margin: 10px auto;
+  }
+  
+  .custom-photo {
+    border-radius: 100px;
+    max-width: 75%;
+    height: auto;
+  }
+  
+  .custom-btn {
+    margin-right: 30%;
+  }
+  
+  .img-fluid {
+    border-radius: 50%;
+    margin-left: 30%;
+    margin-top: 3rem;
+  }
+  
+  .custom-row {
+    margin-bottom: 70px;
+  }
+  
+  @media screen and (max-width: 468px) {
+    .hero {
+      padding: 40px 0 40px 0;
+      margin-bottom: 100px;
+    }
+  
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      margin-top: 5px;
+    }
+  
+    .hero p {
+      font-size: 16px;
+    }
+
+    .text-gradient {
+        background: linear-gradient(to right, #00ffdd, #cf74c0);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 40px;
+        margin-top: 3rem;
+      }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .hero {
+      margin-bottom: 100px;
+    }
+  
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      margin-top: 5px;
+    }
+  
+    .hero p {
+      font-size: 16px;
+    }
+    .custom-photo {
+      border-radius: 100px;
+      max-width: 50%;
+      height: auto;
+      margin-bottom: 30px;
+    }
+    .typewriter h1{
+      font-size: 25px !important;
+      
+    }
+    .text-gradient {
+        background: linear-gradient(to right, #00ffdd, #cf74c0);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 40px;
+        margin-top: 3rem;
+      }
+
+      .parallax {
+        min-height: 80vh; 
+  }
+  
+
+  
+  .image{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: inherit;
+  }
+
+  
+
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  
+  .container-fluid {
+    padding: 50px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
+  
+  .parallax {
+    background-image: url('https://wallpaperaccess.com/full/4735135.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position-y: -100px; 
+   
+}
+
+@media screen and (max-width: 768px) {
+    .parallax {
+      min-height: 80vh; /* Reducir la altura en pantallas más pequeñas */
+    }
+  
+    .text-gradient {
+      font-size: 40px; /* Reducir el tamaño del texto en pantallas más pequeñas */
+      margin-top: 1rem; /* Ajustar el margen superior según sea necesario */
+    }
+  
+    .fs-5 {
+      font-size: 16px; /* Reducir el tamaño del texto del párrafo en pantallas más pequeñas */
+    }
+
+    .btn{
+        max-width: fit-content;
+        margin-left: 7rem;
+    }
+  }
+  
+  }
+
+  .parallax {
+    background-image: url('https://wallpaperaccess.com/full/4735135.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position-y: -100px; 
+   
+}
