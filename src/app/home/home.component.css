@@ -512,3 +512,41 @@ body {
   margin-left: .75rem;
 }
 
+.tooltip-container {
+  color: #ffffff;
+  position: relative;
+  background: var(--background);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 17px;
+  width: 50%;
+
+}
+
+.tooltip {
+  background-color: #00a36d;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.tooltip::before {
+  background-color: #00a36d;
+  position: absolute;
+  content: "";
+  bottom: -0.2em;
+  transform: translate(-50%) rotate(45deg);
+}
+
+.tooltip-container:hover .tooltip {
+  top: -70%;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}

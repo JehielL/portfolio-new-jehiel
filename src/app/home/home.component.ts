@@ -9,10 +9,11 @@ import { RouterLink } from '@angular/router';
 
 
 
+
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NgbAccordionModule, CommonModule, ParallaxStandaloneDirective, CarouselModule, RouterLink],
+  imports: [NgbAccordionModule, CommonModule, ParallaxStandaloneDirective, CarouselModule, RouterLink ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
