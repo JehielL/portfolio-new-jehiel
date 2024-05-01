@@ -222,6 +222,14 @@
   }
 }
 
+.slider .slide:hover .slide-track {
+  animation-play-state: paused;
+}
+
+.slider .slide:hover {
+  cursor: pointer; /* Cambia el cursor al pasar sobre los slides */
+}
+
 
 button {
  position: relative;
