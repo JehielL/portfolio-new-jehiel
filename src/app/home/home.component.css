@@ -100,6 +100,9 @@
   .hero p {
     font-size: 16px;
   }
+  .custom-icon{
+    max-width: 100px !important;
+  }
 }
 
 @media screen and (max-width: 992px) {
