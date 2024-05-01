@@ -129,6 +129,16 @@
     font-size: 25px !important;
     
   }
+  .count-box{
+    width: 80% !important;
+    padding: 30px 30px 25px 30px;
+    position: relative;
+    text-align: center;
+    background: rgba(2, 8, 12, 0.607);
+    border-radius: 30px;
+    margin-left: 10%;
+  
+  }
   
 }
 
