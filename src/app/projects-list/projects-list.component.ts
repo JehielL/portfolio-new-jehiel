@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-projects-list',
@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
   templateUrl: './projects-list.component.html',
   styleUrl: './projects-list.component.css'
 })
-export class ProjectsListComponent {
+export class ProjectsListComponent implements OnInit{
+  ngOnInit(): void {
+    window.scrollTo(0, 0); 
+
+  }
 
 }
