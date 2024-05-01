@@ -600,7 +600,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 99vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
