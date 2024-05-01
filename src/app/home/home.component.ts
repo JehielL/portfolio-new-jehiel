@@ -1,6 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
-import Aos from 'aos';
 import { CommonModule } from '@angular/common';
 import { ParallaxStandaloneDirective } from '@yoozly/ngx-parallax';
 import { CarouselModule } from 'primeng/carousel';
@@ -21,7 +20,6 @@ import { RouterLink } from '@angular/router';
 
 export class HomeComponent implements OnInit {
   ngOnInit(): void {
-    Aos.init();
   }
   
   backgroundStyles: { [key: string]: string } = {}; // Define the type of backgroundStyles
