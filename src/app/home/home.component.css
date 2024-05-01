@@ -146,6 +146,21 @@
     margin-left: 20%;
     margin-top: 2rem;
   }
+
+  .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 99vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position-y: -100px; 
+    max-width: 99vw !important;
+    margin-top: -40px;
+   
+  }
   
 }
 
@@ -408,7 +423,7 @@ body {
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
-  color: #000000;
+  color: #ffffff;
   font-size: 30px;
   font-family: monospace;
   overflow: hidden; 
@@ -577,4 +592,19 @@ body {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+
+.parallax {
+  background-image: url('https://64.media.tumblr.com/fc671558a154e20251fc7e75ccba938a/tumblr_p29irjTxms1wvcbfqo1_1280.gif');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 99vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position-y: -100px; 
+  max-width: 99.5vw;
+ 
 }
