@@ -1,65 +1,50 @@
 <nav class="navbar navbar-expand-md bg-custom">
-    <div class="container-fluid">
-      <a href="index.html">
-        <img src="https://i.ibb.co/tKV9fKn/logo-tech2.png" alt="" style="max-width: 100px;">
-      </a>
-  
-      <div class="loader">
-        <div data-glitch="" class="glitch"> </div>
-     </div>
-      <button class="navbar-toggler text-white" type="button" aria-controls="navbarContent" [attr.aria-expanded]="!collapsed"
-        aria-label="Toggle navigation" (click)="collapsed = !collapsed">
-        <span class="navbar-toggler-icon text-white "></span>
-      </button>
-  
-      <div class="navbar-collapse" [class.collapse]="collapsed" id="navbarContent">
-        <ul class="navbar-nav ms-auto">
-      
-         
-          
-          <!-- Otros elementos del menú de navegación aquí -->
-         
-       
-        
-          
-  
-          <!-- Más elementos del menú de navegación aquí -->
-  
-         <!--<li class="nav-item" ngbDropdown>
-            <a class="nav-link" id="navbarDropdown2" role="button" ngbDropdownToggle>
-              <i class="nav-icon" style="color: #f3f3f3;"></i> Sobre mí
-            </a>
-            <div ngbDropdownMenu aria-labelledby="navbarDropdown2" class="dropdown-menu dropdown-menu-end">
-              <a ngbDropdownItem routerLink="user/list" (click)="$event.preventDefault()" routerLink="/about-us">Sobre mi vida como chef.</a>
-              <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Futuros planes.</a>
-            </div>
-             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            
-        </div>
-          </li>--> 
+  <div class="container-fluid">
+    <a href="index.html">
+      <img src="https://i.ibb.co/tKV9fKn/logo-tech2.png" alt="" style="max-width: 100px;">
+    </a>
 
-         
-  
-          
-         
-        
-          
-  
-        </ul>
-  
-        <!-- Botones de usuario aquí -->
-        
-  
-      
-          
-        <a href="https://github.com/JehielL"><button type="button" class="btn btn-login "  style="margin-right: 50px;"> <i class="bi bi-github"></i>
-            
-          My github</button></a>
-          
-          
-            
-      </div>
+    <div class="loader">
+      <div data-glitch="" class="glitch"> </div>
     </div>
+    <button class="navbar-toggler text-white" type="button" aria-controls="navbarContent"
+      [attr.aria-expanded]="!collapsed" aria-label="Toggle navigation" (click)="collapsed = !collapsed">
+      <span class="navbar-toggler-icon text-white "></span>
+    </button>
 
-    
-  </nav>
+    <div class="navbar-collapse" [class.collapse]="collapsed" id="navbarContent">
+      <ul class="navbar-nav ms-auto">
+
+
+
+        <li class="nav-item" ngbDropdown>
+          <a class="nav-link" id="navbarDropdown2" role="button" ngbDropdownToggle>
+            <i class="nav-icon" style="color: #f3f3f3;"></i> Blog
+          </a>
+          <div ngbDropdownMenu aria-labelledby="navbarDropdown2" class="dropdown-menu dropdown-menu-end">
+            <a ngbDropdownItem  routerLink="blog-tech">Sobre
+              tecnología.</a>
+            <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Sobre Gastronomía.</a>
+          </div>
+
+        </li>
+
+
+
+      </ul>
+
+      <!-- Botones de usuario aquí -->
+
+
+
+
+      <a href="https://github.com/JehielL"><button type="button" class="btn btn-login " style="margin-right: 50px;"> <i
+            class="bi bi-github"></i>
+
+          My github</button></a>
+
+    </div>
+  </div>
+
+
+</nav>
