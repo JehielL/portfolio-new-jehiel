@@ -12,6 +12,10 @@
     background-color: black;
 }
 
+.box-shadow {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
 @media screen and (max-width: 768px) {
     .parallax {
         background-attachment: scroll;
