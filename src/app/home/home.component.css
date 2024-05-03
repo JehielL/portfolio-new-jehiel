@@ -19,13 +19,6 @@
 
 
 
-.horizontal-bars {
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(to right, #0bd1df, #c40eb2, #0d2ff2);
-  /* Degradado de blanco a gris a blanco */
-  margin-bottom: 1rem;
-}
 
 .custom-title {
   font-size: 30px;
@@ -638,3 +631,4 @@ body {
   animation: rotate-clockwise 10s linear infinite alternate;
   border-radius: 50%;
 }
+

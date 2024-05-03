@@ -180,6 +180,20 @@
     opacity: 0.9;
   }
   
+  .nav-item{
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    margin-right: 2rem;
+    color: white;
+    
+  }
+
+  .nav-link{
+    color: #ffffff;
+    padding: auto;
+  }
+
   
   .custom-btn{
   
