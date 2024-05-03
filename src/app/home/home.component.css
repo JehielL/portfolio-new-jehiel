@@ -79,10 +79,7 @@
 }
 
 @media screen and (max-width: 468px) {
-  .hero {
-    padding: 40px 0 40px 0;
-    margin-bottom: 100px;
-  }
+ 
 
   .hero h2 {
     font-size: 48px;
@@ -99,10 +96,7 @@
 }
 
 @media screen and (max-width: 992px) {
-  .hero {
-    margin-bottom: 100px;
-  }
-
+  
   .hero h2 {
     font-size: 48px;
     margin-bottom: 10px;
@@ -144,8 +138,8 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
+    background-size: 100% 100%; 
+    min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,6 +147,16 @@
     max-width: 102vw !important;
     margin-top: -40px;
    
+  }
+  .loader-container{
+    transform: translate(-50%, -50%);
+    width: 30px; 
+    height: 30px; 
+  
+    margin-left: 45% !important;
+    margin-top: 20%;
+    margin-bottom: 30%;
+  
   }
   
 }

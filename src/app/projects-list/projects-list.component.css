@@ -190,21 +190,28 @@
 
 @media screen and (max-width: 768px) {
     .parallax {
-      min-height: 80vh; /* Reducir la altura en pantallas más pequeñas */
+      min-height: 80vh; 
     }
   
     .text-gradient {
-      font-size: 40px; /* Reducir el tamaño del texto en pantallas más pequeñas */
-      margin-top: 1rem; /* Ajustar el margen superior según sea necesario */
+      font-size: 40px; 
+      margin-top: 1rem; 
     }
   
     .fs-5 {
-      font-size: 16px; /* Reducir el tamaño del texto del párrafo en pantallas más pequeñas */
+      font-size: 16px; 
     }
 
     .btn{
         max-width: fit-content;
         margin-left: 7rem;
+    }
+    .btn-outline-info{
+       margin-right: 25% !important;
+    }
+    .card{
+      margin-left: 20% !important;
+    
     }
   }
   

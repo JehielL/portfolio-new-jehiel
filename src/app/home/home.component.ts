@@ -21,7 +21,14 @@ import { RouterLink } from '@angular/router';
 
 
 export class HomeComponent implements OnInit {
+
+  activedLoader = true;
+
   ngOnInit(): void {
+    setTimeout(() => {
+      this.activedLoader = false;
+    }, 2300); 
+    window.scrollTo(0, 0); 
   }
   
   backgroundStyles: { [key: string]: string } = {}; // Define the type of backgroundStyles

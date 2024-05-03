@@ -1,0 +1,20 @@
+.parallax {
+    background-image: url('https://windowscustomization.com/wp-content/uploads/2019/10/Lost-in-Space.gif');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 99.5vw;
+    background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .parallax {
+        background-attachment: scroll;
+        min-height: 50vh;
+    }
+}

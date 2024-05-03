@@ -1,21 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-projects-list',
+  selector: 'app-blog-tech-detail',
   standalone: true,
   imports: [],
-  templateUrl: './projects-list.component.html',
-  styleUrl: './projects-list.component.css'
+  templateUrl: './blog-tech-detail.component.html',
+  styleUrl: './blog-tech-detail.component.css'
 })
-export class ProjectsListComponent implements OnInit{
- 
-  activedLoader = true;
+export class BlogTechDetailComponent implements OnInit{
 
+  activedLoader = true;
   ngOnInit(): void {
+
     setTimeout(() => {
       this.activedLoader = false;
     }, 2300); 
     window.scrollTo(0, 0); 
-
+    
   }
+
 }

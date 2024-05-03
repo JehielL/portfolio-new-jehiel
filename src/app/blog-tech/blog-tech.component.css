@@ -3,7 +3,7 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%; 
     min-height: 50vh;
     display: flex;
     align-items: center;
@@ -12,7 +12,13 @@
     max-width: 99.5vw;
    
   }
-
+  @media screen and (max-width: 768px) {
+    .parallax {
+        background-attachment: scroll; 
+        min-height: 50vh; 
+        background-position-y: 0px;
+    }
+}
   .custom-text{
 
     font-weight: 450;
