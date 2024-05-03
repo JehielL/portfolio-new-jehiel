@@ -138,7 +138,7 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%; 
+    background-size: 100% 100% !important; 
     min-height: 60vh;
     display: flex;
     align-items: center;
@@ -596,7 +596,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%; 
   min-height: 99vh;
   display: flex;
   align-items: center;
