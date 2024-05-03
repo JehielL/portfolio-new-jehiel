@@ -17,4 +17,8 @@
         background-attachment: scroll;
         min-height: 50vh;
     }
+
+    .about{
+        display: none;
+    }
 }
