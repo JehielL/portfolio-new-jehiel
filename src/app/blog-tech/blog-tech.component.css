@@ -18,6 +18,16 @@
         min-height: 50vh; 
         background-position-y: 0px;
     }
+    .loader-container{
+        transform: translate(-50%, -50%);
+        width: 30px; 
+        height: 30px; 
+      
+        margin-left: 45% !important;
+        margin-top: 20%;
+        margin-bottom: 30%;
+      
+      }
 }
   .custom-text{
 
