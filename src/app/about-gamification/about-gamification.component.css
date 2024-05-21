@@ -1,9 +1,27 @@
+@import url('https://fonts.cdnfonts.com/css/common-pixel');
+
+
 .parallax {
     background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/81bb4b165684019.640b6038d133e.gif');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%; 
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 99.5vw;
+    background-color: black;
+}
+
+
+.parallaxdos {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/852/646/399/shovel-knight-video-games-pixel-art-retro-games-wallpaper-thumb.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 50%; 
     min-height: 50vh;
     display: flex;
     align-items: center;
@@ -30,6 +48,57 @@
     -webkit-text-stroke: 2px #ffd500; 
 }
 
+.custom-subname {
+    font-size: 2em; 
+    font-weight: bold; 
+    color: transparent;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-text-stroke: 3px mintcream; 
+}
+.custom-card {
+    border: 2px solid #000000;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    background-color: transparent; 
+    margin: 10px; 
+}
+
+.custom-card:hover {
+    border: 2px solid transparent;
+    background: linear-gradient(white, white) padding-box, 
+                linear-gradient(90deg, #000218, #000000, #00003b) border-box;
+    transform: scale(1.05); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+    border-radius: 20px; 
+}
+
+.custom-card img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.featurette-image{
+    border-radius: 20px !important;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .custom-card {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+
+    .custom-subname {
+        font-size: 1.5em; 
+        font-weight: bold; 
+        color: transparent;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        -webkit-text-stroke: 3px mintcream; 
+    }
+}
+
 .overlay::before {
     content: "";
     position: absolute;
@@ -43,18 +112,51 @@
     padding: 30px;
 }
 
-
 .box-shadow {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
-@media screen and (max-width: 768px) {
-    .parallax {
-        background-attachment: scroll;
-        min-height: 50vh;
+button {
+    background-color: transparent;
+    color: black;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
+    box-shadow: 0 0 0 0 black;
+}
+
+button:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+}
+
+button:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+}
+
+@media screen and (max-width: 576px) {
+    .custom-card {
+        padding: 10px;
+        width: 70%;
+        height: 70%; 
     }
 
-    .about{
-        display: none;
+    .custom-card img {
+        width: 100px;
+        height: 100px;
     }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+.card-hover:hover .col {
+    transition: transform 0.3s ease;
+    transform: scale(0.95);
 }
