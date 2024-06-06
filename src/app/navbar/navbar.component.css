@@ -1,165 +1,140 @@
 /* Estilos específicos para el botón primario */
 .btn-primary {
-    background: linear-gradient(-45deg, #940000 0%,#f7af1d 50%, #D00000   100%);
-    border: none;
-    transition: background-position 0.3s ease;
-    background-size: 200% auto;
-    color: rgb(0, 0, 0);
-  }
-  
-  .navbar{
-    position: sticky;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-  }
-  .btn-login {
-    background: linear-gradient(to right, #b30092, #009bb3);
-    border: none;
-    transition: background-position 0.3s ease, transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-    background-size: 200% auto;
-    color: white;
-  }
-  
-  .nav-link{
-    color: #000000;
-  }
-  .btn-primary:hover {
-    background-position: right center; 
-    transform: scale(1.05); 
-  }
-  
-  .btn-login:hover {
-    background-position: right center; 
-    transform: scale(1.05); 
-  }
-  
-  .btn-register {
-    background: linear-gradient(to right, #009bb3, #4ed851);
-    border: none;
-    transition: background-position 0.3s ease, transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-    background-size: 200% auto;
-    color: white;
-   
-  }
-  .btn-register:hover {
-    background-position: right center; 
-    transform: scale(1.05); 
-  }
-  
-  
-  
-  
-  .bi {
-    font-size: 1rem;
-  }
-  
-  /* Cambio de la dirección de la lista de navegación en dispositivos pequeños */
-  @media (max-width: 768px) {
-    .navbar-nav {
+  background: linear-gradient(-45deg, #940000 0%, #f7af1d 50%, #D00000 100%);
+  border: none;
+  transition: background-position 0.3s ease, transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  background-size: 200% auto;
+  color: rgb(0, 0, 0);
+}
+
+.navbar {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.btn-login, .btn-register {
+  background: linear-gradient(to right, #b30092, #009bb3);
+  border: none;
+  transition: background-position 0.3s ease, transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  background-size: 200% auto;
+  color: white;
+}
+
+.nav-link, .nav-item {
+  color: #ffffff;
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+}
+
+.btn-primary:hover, .btn-login:hover, .btn-register:hover {
+  background-position: right center;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
       flex-direction: column;
       flex-wrap: nowrap;
-    }
-    
-    .navbar {
+  }
+  
+  .navbar {
       padding-right: 15px;
       padding-left: 15px;
-    }
-  
-    .custom-drop{
-      border: 0px  !important;
+  }
+
+  .custom-drop {
+      border: none !important;
       border-radius: 3px;
       width: 55%;
       padding: 10px;
-      margin-left:-1rem;
-    }
-    .navbar-nav .dropdown-menu {
-      position : absolute;
+      margin-left: -1rem;
+  }
+  
+  .navbar-nav .dropdown-menu {
+      position: absolute;
       width: 100%;
-    }
-    .bg-custom{
-      background-color: #FFA33C ;
-      opacity: 1!important;
-    }
-    .nav-item{
+  }
+  
+  .bg-custom {
+      background-color: #FFA33C;
+      opacity: 1 !important;
+  }
+  
+  .nav-item {
       width: 40% !important;
       margin-bottom: 1rem;
       text-align: center;
+  }
+}
 
-    }
-  
-    
+@media (max-width: 1000px) {
+  .loader {
+      display: none;
   }
-  
-  @media (max-width: 1000px) {
-    
-    .loader {
-      display: none; 
-    }
-  }
-  
-  
-  /* Animación para el icono bi-fire */
-  @keyframes fireAnimation {
-    0% { color: #FF5733; }
-    50% { color: #FFD700; }
-    100% { color: #FF5733; }
-  }
-  @keyframes registerAnimation {
-    0% { color: #ffffff; }
-    50% { color: #000000; }
-    100% { color: #ffffff; }
-  }
-  .bi-fire {
-    animation: fireAnimation 3s infinite;
-  }
-  
-  /* Estilos adicionales para el botón primario en el hover */
-  .btn-primary:hover {
-    background-position: right center; 
-  }   
-  .bg-custom{
-    background-color: #202030;
-    opacity: 0.9;
-  }
-  
-  .nav-item{
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    border-radius: 10px;
-    margin-right: 2rem;
-    color: white;
-    
-  }
+}
 
-  .nav-link{
-    color: #ffffff;
-    padding: auto;
-  }
+/* Animación para el icono bi-fire */
+@keyframes fireAnimation {
+  0% { color: #FF5733; }
+  50% { color: #FFD700; }
+  100% { color: #FF5733; }
+}
 
-  
-  .custom-btn{
-  
-    border: 2px solid #ffffff;
-    border-color: #ffffff;
-    
-  }
-  .custom-drop{
-    border: 1px solid #030303;
-    border-radius: 3px;
-  }
-  
-  .user-photo{
-    border: 1px solid #000000;
-    border-radius: 50%;
-    max-width: 30px;
-  }
+@keyframes registerAnimation {
+  0% { color: #ffffff; }
+  50% { color: #000000; }
+  100% { color: #ffffff; }
+}
 
-  .navbar-toggler {
-    background-color: #61f7ffab !important;
-    border-color: transparent !important; 
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-    opacity: 0.9;
+.bi-fire {
+  animation: fireAnimation 3s infinite;
+}
+
+/* Estilos adicionales para el botón primario en el hover */
+.btn-primary:hover {
+  background-position: right center;
+}
+
+.bg-custom {
+  background-color: #202030;
+  opacity: 0.9;
+}
+
+.nav-item {
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  margin-right: 2rem;
+}
+
+.nav-link {
+  padding: auto;
+}
+
+.custom-btn {
+  border: 2px solid #ffffff;
+  border-color: #ffffff;
+}
+
+.custom-drop {
+  border: 1px solid #030303;
+  border-radius: 3px;
+}
+
+.user-photo {
+  border: 1px solid #000000;
+  border-radius: 50%;
+  max-width: 30px;
+}
+
+.navbar-toggler {
+  background-color: #61f7ffab !important;
+  border-color: transparent !important;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
 }

@@ -5,6 +5,7 @@ import { BlogTechComponent } from './blog-tech/blog-tech.component';
 import { BlogTechDetailComponent } from './blog-tech-detail/blog-tech-detail.component';
 import { BlogTechAboutMeComponent } from './blog-tech-about-me/blog-tech-about-me.component';
 import { AboutGamificationComponent } from './about-gamification/about-gamification.component';
+import { AboutIaComponent } from './about-ia/about-ia.component';
 
 export const routes: Routes = [
     {
@@ -31,5 +32,9 @@ export const routes: Routes = [
     {
         path: 'blog-tech/about-gamification',
         component: AboutGamificationComponent
+    },
+    {
+        path:'blog-tech/about-ia',
+        component: AboutIaComponent
     }
 ];

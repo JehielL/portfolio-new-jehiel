@@ -324,11 +324,14 @@ button span {
   justify-content: center;
   overflow: hidden;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-  background-position: center; 
-  background-size: cover; 
-  margin: 20px auto; 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  margin: 20px auto;
   border: 0px !important;
 }
+
+
 
 .roboto-medium-italic {
   font-family: "Roboto", sans-serif;
