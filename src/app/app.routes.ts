@@ -6,6 +6,7 @@ import { BlogTechDetailComponent } from './blog-tech-detail/blog-tech-detail.com
 import { BlogTechAboutMeComponent } from './blog-tech-about-me/blog-tech-about-me.component';
 import { AboutGamificationComponent } from './about-gamification/about-gamification.component';
 import { AboutIaComponent } from './about-ia/about-ia.component';
+import { TimelineChefComponent } from './timeline-chef/timeline-chef.component';
 
 export const routes: Routes = [
     {
@@ -36,5 +37,9 @@ export const routes: Routes = [
     {
         path:'blog-tech/about-ia',
         component: AboutIaComponent
+    },
+    {
+        path: 'timeline-chef',
+        component: TimelineChefComponent
     }
 ];
