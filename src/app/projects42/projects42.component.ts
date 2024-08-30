@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos'; 
+
+
 
 @Component({
   selector: 'app-projects42',
@@ -12,6 +15,8 @@ export class Projects42Component implements OnInit{
   activedLoader = true;
   ngOnInit(): void {
 
+    AOS.init();
+    
     setTimeout(() => {
       this.activedLoader = false;
     }, 2300); 

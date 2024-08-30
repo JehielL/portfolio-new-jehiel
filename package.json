@@ -25,6 +25,7 @@
     "@popperjs/core": "^2.11.8",
     "@yoozly/ngx-parallax": "^17.0.0",
     "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "primeng": "^17.15.0",
