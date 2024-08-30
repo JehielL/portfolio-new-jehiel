@@ -188,3 +188,20 @@
     
     color: #000000;
   }
+
+  .imagegif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.imagegif img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
