@@ -6,8 +6,8 @@ body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
     background-color: #f3f3f3;
-    background-image: radial-gradient(#202030 0.7px, transparent 0.7px), radial-gradient(transparent, #f3f3f3 1px);
-    background-size: 20px 20px; 
+    background-image: radial-gradient(#202030 0.7px, transparent 0.7px), radial-gradient(transparent, #f3f3f3 0.7px);
+    background-size: 40px 40px; 
     background-position: 0 0, 5px 5px; 
 }
 

@@ -1,18 +1,17 @@
-.custom-main{
-    background-color: #000000; 
-    background-image: radial-gradient(circle, #f3f3f3 0.7px, transparent 0.7px),
-                      radial-gradient(circle, transparent, transparent); 
-    background-size: 20px 20px; 
-    background-position: 0 0; 
-    background-repeat: repeat; 
 
+.custom-main {
+    background-color: #000000; 
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0.7px, transparent 0.7px),
+                      radial-gradient(circle, transparent, transparent); 
+    background-size: 40px 40px; 
+    background-position: 0 0;
+    background-repeat: repeat;
+    position: relative;
+    z-index: 1;
 }
 
 .parallax { 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%; 
+    background-size: cover; 
     min-height: 50vh;
     display: flex;
     align-items: center;
@@ -20,16 +19,29 @@
     max-width: 99.5vw;
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    background-color: #000000; 
-    background-image: radial-gradient(circle, #f3f3f3 0.7px, transparent 0.7px),
-                      radial-gradient(circle, transparent, transparent); 
-    background-size: 20px 20px; 
-    background-position: 0 0; 
-    background-repeat: repeat; 
+    z-index: 2;
 }
+
+
+/* Fondo del parallax */
+.parallax { 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 99.5vw;
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    z-index: 2;
+}
+
+/* Ajustes para la clase .overlay */
 .overlay {
     position: relative;
-    z-index: 1;
+    z-index: 2; /* Asegúrate de que el contenido dentro del overlay esté encima del fondo */
     padding: 30px;
 }
 .custom-name {
