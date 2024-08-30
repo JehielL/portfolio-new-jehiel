@@ -15,7 +15,11 @@ export class Projects42Component implements OnInit{
   activedLoader = true;
   ngOnInit(): void {
 
-    AOS.init();
+    AOS.init({
+      duration: 1500, 
+      offset: 200,   
+      once: true,
+    });
     
     setTimeout(() => {
       this.activedLoader = false;
