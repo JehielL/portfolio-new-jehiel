@@ -2,7 +2,6 @@
 
 
 .parallax {
-    background-image: url('https://d1lzrgdbvkolkd.cloudfront.net/3241_B_5ce716c1b2.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -12,7 +11,7 @@
     align-items: center;
     justify-content: center;
     max-width: 100vw;
-    background-color: black;
+   
 }
 
 
@@ -125,10 +124,12 @@
         margin-left: 6% !important;
         margin-top: 10px !important;
     }
-    .custom-cont{
+
+    .custom-cont {
         margin-left: 2% !important;
     }
-    .custom-col{
+
+    .custom-col {
         margin-left: 9% !important;
     }
 
@@ -136,13 +137,15 @@
         order: -1;
     }
 
-    .custom-name{
+    .custom-name {
         margin-left: -5% !important;
     }
-    .custom-othername{
+
+    .custom-othername {
         margin-left: -5% !important;
     }
-    .lead{
+
+    .lead {
         font-size: 15px !important;
     }
 }
@@ -235,24 +238,25 @@ button:active {
         margin-left: 25%;
 
     }
-    .row{
+
+    .row {
         max-width: 95% !important;
-      
+
     }
-    
-    .blog-post{
+
+    .blog-post {
         margin-left: 11% !important;
         max-width: 100% !important;
     }
 
-    .overlay{
+    .overlay {
         max-width: 90% !important;
         text-align: center;
         margin-left: 5% !important;
     }
 }
 
-.card-hover:hover{
+.card-hover:hover {
     transition: transform 0.3s ease;
     transform: scale(0.95);
 }
